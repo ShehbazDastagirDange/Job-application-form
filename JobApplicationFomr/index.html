@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobApplicationForm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>JobApplicationForm</h2>
+    </header>
+    <form action="" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <label for="number">Number:</label>
+      <input type="tel" name="number" id="number" required />
+      <label for="resume">Resume:</label>
+      <input
+        type="file"
+        name="resume"
+        id="resume"
+        accept=".pdf, .doc, .docx"
+        required
+      />
+      <label for="coverletter">Cover Letter:</label>
+      <textarea
+        name="coverletter"
+        id="coverletter"
+        maxlength="1000"
+        placeholder="Write your cover letter here please."
+      ></textarea>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
